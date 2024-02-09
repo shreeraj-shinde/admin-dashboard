@@ -1,4 +1,6 @@
 .dashboard {
+  height: inherit;
+  overflow-y: auto;
   .bar {
     height: 4rem;
     @include flex(row, unset);
@@ -22,11 +24,12 @@
     @include flex(row, space-between, stretch, 2rem);
     padding: 2rem 2rem 2rem 0;
     .widget {
-      min-width: 16rem;
+      min-width: 14rem;
       background-color: white;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.132);
       padding: 2rem;
-      @include flex(row, space-between, 2rem);
+      border-radius: 10px;
+      @include flex(row, space-evenly, 2rem);
 
       .widgetInfo {
         > p {
@@ -34,7 +37,7 @@
           font-size: 0.8rem;
         }
         > h4 {
-          font-size: 1.5rem;
+          font-size: 1.1rem;
         }
         > span {
           @include flex(row, unset, center, 0.2rem);
@@ -57,6 +60,108 @@
         span {
           position: relative;
         }
+      }
+    }
+  }
+  .graphContainer {
+    @include flex(row, unset, unset, 1.5rem);
+    padding: 0.25rem 0;
+    > div {
+      background-color: white;
+      border-radius: 10px;
+    }
+    .revenueChart {
+      width: 73%;
+      padding: 0.5rem 1.5rem;
+      > h2 {
+        @include heading;
+        margin: 0.5rem 0 0.5rem 0rem;
+        text-align: center;
+      }
+    }
+    .dashboardCategories {
+      width: 100%;
+      max-width: 14rem;
+      @include flex(column, center, unset, 0);
+      padding-bottom: 0.5rem;
+      > h2 {
+        @include heading;
+        margin: 0.5rem 0 0.5rem 0rem;
+        text-align: center;
+      }
+
+      > div {
+        overflow-y: auto;
+        padding-left: 0.5rem;
+      }
+
+      .categoryItem {
+        width: 100%;
+        @include flex(row, space-between);
+        padding: 0.5rem;
+        > h5 {
+          letter-spacing: 1px;
+          font-weight: 300;
+        }
+
+        > div {
+          margin-left: auto;
+          width: 4rem;
+          background-color: rgb(217, 217, 217);
+          border-radius: 20px;
+          height: 0.5rem;
+          flex: none;
+          > div {
+            height: 100%;
+            border-radius: 20px;
+          }
+        }
+        > span {
+          font-size: 0.8rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .transactionContainer {
+    display: flex;
+    gap: 2rem;
+    padding: 0 1rem 1rem 0;
+    height: 28rem;
+
+    > div {
+      background-color: white;
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.132);
+      border-radius: 10px;
+    }
+    .genderChart {
+      margin-top: 2rem;
+      width: 100%;
+      max-width: 18rem;
+      padding: 0.5rem;
+      position: relative;
+
+      > h2 {
+        text-align: center;
+        margin: 1rem 0 1rem 0;
+        @include heading;
+      }
+      > p {
+        @include posCenter;
+        font-size: 1rem;
+        color: rgba(0, 0, 0, 0.634);
+      }
+    }
+    .transactionBox {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 0.5rem;
+      overflow-x: auto;
+      > h2 {
+        margin: 1rem 0 0 0;
+        @include heading;
+        text-align: center;
       }
     }
   }

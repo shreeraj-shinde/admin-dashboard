@@ -1,0 +1,61 @@
+{
+  "categories": [
+    {
+      "value": 40,
+      "heading": "Laptops"
+    },
+    {
+      "value": 60,
+      "heading": "Mobiles"
+    },
+    {
+      "value": 50,
+      "heading": "Cameras"
+    },
+    {
+      "value": 70,
+      "heading": "Dekstops"
+    },
+    {
+      "value": 85,
+      "heading": "TVs"
+    }
+  ],
+  "transaction": [
+    {
+      "id": "2468",
+      "amount": 5100,
+      "quantity": 4,
+      "discount": 100,
+      "status": "processing"
+    },
+    {
+      "id": "3691",
+      "amount": 5500,
+      "quantity": 2,
+      "discount": 900,
+      "status": "processing"
+    },
+    {
+      "id": "4811",
+      "amount": 5700,
+      "quantity": 1,
+      "discount": 200,
+      "status": "processing"
+    },
+    {
+      "id": "5112",
+      "amount": 4100,
+      "quantity": 3,
+      "discount": 500,
+      "status": "processing"
+    },
+    {
+      "id": "6112",
+      "amount": 3100,
+      "quantity": 8,
+      "discount": 800,
+      "status": "processing"
+    }
+  ]
+}
