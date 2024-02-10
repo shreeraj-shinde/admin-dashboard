@@ -99,7 +99,7 @@ function TableHOC<T extends Object>(
                 table.setPageIndex(page);
               }}
             />
-            de {table.getPageCount()}
+            of {table.getPageCount()}
           </span>
           <button
             onClick={() => table.nextPage()}

@@ -64,20 +64,6 @@ a {
       }
     }
   }
-
-  .paginationContainer {
-    margin-top: 0.5rem;
-
-    > button {
-      outline: none;
-      border: none;
-    }
-
-    > input {
-      border: none;
-      outline: none;
-    }
-  }
 }
 .table {
   border-collapse: collapse;
@@ -138,5 +124,24 @@ a {
         border-right: none;
       }
     }
+  }
+}
+
+.paginationContainer {
+  padding: 1rem;
+
+  > button {
+    padding: 0.2rem 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 115, 255);
+    color: white;
+  }
+
+  > input {
+    border: none;
+    outline: none;
   }
 }
