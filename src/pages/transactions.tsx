@@ -54,7 +54,7 @@ const Transactions = () => {
       discount: 70,
       quantity: 45,
       status: <span className="red">Processing</span>,
-      action: <Link to="/admin/product/Ipad">Manage</Link>,
+      action: <Link to="/admin/transaction/Ipad">Manage</Link>,
     },
     {
       user: "Lara Ondrak",
@@ -62,7 +62,7 @@ const Transactions = () => {
       discount: 37,
       quantity: 33,
       status: <span className="red">Processing</span>,
-      action: <Link to="/admin/product/Ipad">Manage</Link>,
+      action: <Link to="/admin/transaction/Ipad">Manage</Link>,
     },
     {
       user: "Nolan Batchelder",
@@ -70,7 +70,7 @@ const Transactions = () => {
       discount: 93,
       quantity: 99,
       status: <span className="red">Processing</span>,
-      action: <Link to="/admin/product/Ipad">Manage</Link>,
+      action: <Link to="/admin/transaction/Ipad">Manage</Link>,
     },
     {
       user: "Clary Spofforth",
@@ -78,7 +78,7 @@ const Transactions = () => {
       discount: 100,
       quantity: 33,
       status: <span className="red">Processing</span>,
-      action: <Link to="/admin/product/Ipad">Manage</Link>,
+      action: <Link to="/admin/transaction/Ipad">Manage</Link>,
     },
     {
       user: "Harwell Duff",
@@ -86,7 +86,7 @@ const Transactions = () => {
       discount: 88,
       quantity: 27,
       status: <span className="red">Processing</span>,
-      action: <Link to="/admin/product/Ipad">Manage</Link>,
+      action: <Link to="/admin/transaction/Ipad">Manage</Link>,
     },
     {
       user: "Cleveland Donati",
@@ -94,7 +94,7 @@ const Transactions = () => {
       discount: 88,
       quantity: 75,
       status: <span className="red">Processing</span>,
-      action: <Link to="/admin/product/Ipad">Manage</Link>,
+      action: <Link to="/admin/transaction/Ipad">Manage</Link>,
     },
     {
       user: "Ingram Markie",
@@ -102,7 +102,7 @@ const Transactions = () => {
       discount: 36,
       quantity: 31,
       status: <span className="red">Processing</span>,
-      action: <Link to="/admin/product/Ipad">Manage</Link>,
+      action: <Link to="/admin/transaction/Ipad">Manage</Link>,
     },
   ]);
 

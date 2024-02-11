@@ -17,3 +17,104 @@
     opacity: 0.8;
   }
 }
+.productManagement {
+  @include flex(row, center, unset);
+  padding: 3rem;
+
+  > section {
+    width: 100%;
+    height: 85vh;
+    max-width: 400;
+    box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.216);
+    background-color: white;
+    padding: 3rem;
+    position: relative;
+    @include flex(column, unset, center, 0.5rem);
+    border-radius: 5px;
+    > h2 {
+      @include heading(2px);
+      text-align: center;
+    }
+
+    > img {
+      @include square(80%);
+      object-fit: cover;
+    }
+
+    > strong {
+      font-weight: 300;
+    }
+
+    > span {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+
+    > p {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    > h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  > article {
+    margin: auto;
+    height: 85vh;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.216);
+
+    > form {
+      @include flex(column, unset, center, 2rem);
+      > h2 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      > img {
+        @include square(4rem);
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      > div {
+        width: 100%;
+        position: relative;
+
+        > label {
+          position: absolute;
+          left: 0;
+          top: -1.5rem;
+        }
+
+        > input {
+          @include inputStyle(
+            100%,
+            1rem,
+            unset,
+            1px solid rgba(13, 13, 13, 0.196)
+          );
+          border-radius: 5px;
+        }
+      }
+      > button {
+        padding: 0.7rem;
+        background-color: rgb(5, 107, 224);
+        width: 100%;
+        color: white;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}
