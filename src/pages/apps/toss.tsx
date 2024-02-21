@@ -12,10 +12,16 @@ const Toss = () => {
   return (
     <div className="adminContainer">
       <AdminSidebar />
-      <main>
+      <main className="dashboardAppContainer">
         <h1>Toss</h1>
         <section>
-          <article className="tossCoin">
+          <article
+            className="tossCoin"
+            onClick={flipCoin}
+            style={{
+              transform: `rotateY(${angle}deg)`,
+            }}
+          >
             <div></div>
             <div></div>
           </article>

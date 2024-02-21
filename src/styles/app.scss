@@ -3,7 +3,8 @@
 @import "./products";
 @import "./chart";
 @import "./dashboardApp";
-:root  {
+@import "./mediaquery";
+:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -146,4 +147,17 @@ a {
     border: none;
     outline: none;
   }
+}
+
+#hamburger {
+  display: grid;
+  place-items: center;
+  @include square(2rem);
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: rgba(44, 104, 255);
+  position: fixed;
+  gap: 1rem;
+  border-radius: 50%;
 }

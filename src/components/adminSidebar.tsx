@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { IconType } from "react-icons";
 import { AiFillFileText } from "react-icons/ai";
 import {
@@ -7,6 +8,7 @@ import {
   FaGamepad,
   FaStopwatch,
 } from "react-icons/fa";
+import { HiMenuAlt4 } from "react-icons/hi";
 import { IoIosPeople } from "react-icons/io";
 import {
   RiCoupon3Fill,
@@ -17,17 +19,43 @@ import { Link, Location, useLocation } from "react-router-dom";
 
 const AdminSidebar = () => {
   const location = useLocation();
+
+  const [showModal, setShowModal] = useState<boolean>(false);
+
+  const [phoneActive, setPhoneActive] = useState<boolean>(
+    window.innerWidth < 1100
+  );
   return (
-    <aside>
-      <h2>Logo</h2>
-      <DivOne location={location} />
+    <>
+      {phoneActive && (
+        <button id="hamburger" onClick={() => setShowModal(true)}>
+          <HiMenuAlt4 />
+        </button>
+      )}
+      <aside
+        style={
+          phoneActive
+            ? {
+                width: "20rem",
+                height: "100vh",
+                position: "fixed",
+                top: 0,
+                left: "-20rem",
+                transition: "all 0.5s",
+              }
+            : {}
+        }
+      >
+        <h2>Logo</h2>
+        <DivOne location={location} />
 
-      {/* Charts */}
-      <DivTwo location={location} />
+        {/* Charts */}
+        <DivTwo location={location} />
 
-      {/* Apps */}
-      <DivThree location={location} />
-    </aside>
+        {/* Apps */}
+        <DivThree location={location} />
+      </aside>
+    </>
   );
 };
 
